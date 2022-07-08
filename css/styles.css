@@ -137,6 +137,7 @@ header {
     color: var(--white);
     border: none;
     border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
 }
 
 #search_form button .btn_icon {
@@ -150,6 +151,18 @@ header {
     align-items: center;
     margin-top: 20px;
     flex-wrap: wrap;
+}
+
+#filters_container a {
+    text-decoration: none;
+}
+
+#filters_container a:visited {
+    color: black;
+}
+
+#filters_container a:hover {
+    color: var(--blue);
 }
 
 #filters_container h2 {
