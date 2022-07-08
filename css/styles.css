@@ -2,5 +2,38 @@
 @import url('/css/colors.css');
 body {
     background-color: var(--gris);
-    font-family: 'Raleway', sans-serif; 
+    font-family: 'Raleway', sans-serif;
+    margin: 1% 5%; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#site_logo img {
+    max-width: 50%;
+}
+
+#header_nav {
+
+}
+
+#header_nav_list{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.header_nav_link {
+    padding: 10px;
+}
+
+.header_nav_link a{
+    text-decoration: none;
+    color: black;
+}
+.header_nav_link a:hover{
+    color: var(--blue);
 }
