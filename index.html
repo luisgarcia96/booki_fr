@@ -7,7 +7,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+    
+    <script src="https://kit.fontawesome.com/82101af1fd.js" crossorigin="anonymous"></script>
     
     <title>Booki FR</title>
 </head>
@@ -21,8 +22,16 @@
             </ul>
         </nav>
     </header>
-    <section id="search_bar">
-        <h2>Search Bar</h2>
+    <section id="search_form_container">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en plein nature</p>
+        <form action="#" method="post" id="search_form">
+            <div id="map_icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <input type="text" value="Marseille, France">
+            <button type="submit"><span class="btn_text">Rechercher</span><span class="btn_icon"><i class="fa-solid fa-magnifying-glass"></i></span></button>
+        </form>
     </section>
     <main>
         <section id="accommodations">
