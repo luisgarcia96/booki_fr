@@ -39,6 +39,23 @@ i {
     color: var(--blue);
 }
 
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--black);
+}
+
+.section_title {
+    width: 100%;
+    font-size: x-large;
+}
+
+.card_title {
+    font-size: large;
+}
+
 /* --------------- Header tag and it's children tags --------------- */
 header {
     display: flex;
@@ -227,24 +244,72 @@ header {
 #city_accommodations {
     background-color:
      var(--gris-darker);
-    padding: 25px;
-    width: 70%;
+    padding: 35px;
+    width: 60%;
     border-radius: 10px;
     margin-right: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    
 }
+
+.city_accommodations_card {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 35px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.city_accommodation_image {
+    border-radius: 10px 0 0 10px;
+    height: 175px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.city_accommodations_card .card_info {
+    padding: 5px;
+    flex-grow: 1;
+}
+
+.city_accommodations_card .card_title {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.city_accommodations_card .card_description {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#show_more_message {
+    width: 100%;
+}
+
+#show_more_message p{
+    font-weight: 700;
+    font-size: large;
+    margin: 0;
+}
+
 
 /* ------- Popular Accommodations ------ */
 
 #popular_accommodations {
     background-color: var(--gris-darker);
-    padding: 25px;
+    padding: 35px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-}
-
-.section_title {
-    width: 100%;
+    flex-grow: 1;
 }
 
 .popular_accommodations_card {
@@ -253,26 +318,28 @@ header {
     padding: 5px;
     display: flex;
     margin-bottom: 25px;
+    margin-top: 15px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.05);
 }
 
 .popular_accommodation_image {
     border-radius: 10px 0 0 10px;
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     object-fit: cover;
 }
 
-.card_info {
+.popular_accommodations_card .card_info {
     padding: 0px 25px;
     flex-grow: 1;
 }
 
-.card_title {
+.popular_accommodations_card .card_title {
     width: 100%;
     margin-bottom: 10px;
 }
 
-.card_description {
+.popular_accommodations_card .card_description {
     margin-top: 0;
 }
 
@@ -397,16 +464,24 @@ header {
         background-color: var(--white);
     }
 
+    .city_accommodations_card {
+        width: 100%;
+    }
+    
+    .city_accommodation_image {
+
+    }
+
     /* ------------- @Smartphones / Popular accommodations ------------- */
     #popular_accommodations {
-        width: 100vw;
+        width: 100%;
         padding: 10px;
         border-radius: 0;
     }
 
     
     .popular_accommodations_card {
-        width: 95%;
+        width: 100%;
         padding: 5px;
     }
     
