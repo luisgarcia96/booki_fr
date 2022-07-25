@@ -246,7 +246,7 @@ header {
      var(--gris-darker);
     padding: 35px;
     width: 60%;
-    border-radius: 10px;
+    border-radius: 25px;
     margin-right: 25px;
     display: flex;
     flex-wrap: wrap;
@@ -257,7 +257,7 @@ header {
 
 .city_accommodations_card {
     background-color: var(--white);
-    border-radius: 10px;
+    border-radius: 25px;
     padding: 5px;
     margin-bottom: 35px;
     width: 300px;
@@ -268,7 +268,7 @@ header {
 }
 
 .city_accommodation_image {
-    border-radius: 10px 0 0 10px;
+    border-radius: 25px 25px 0 0;
     height: 175px;
     width: 100%;
     object-fit: cover;
@@ -306,7 +306,7 @@ header {
 #popular_accommodations {
     background-color: var(--gris-darker);
     padding: 35px;
-    border-radius: 10px;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -314,7 +314,7 @@ header {
 
 .popular_accommodations_card {
     background-color: var(--white);
-    border-radius: 10px;
+    border-radius: 25px;
     padding: 5px;
     display: flex;
     margin-bottom: 25px;
@@ -323,7 +323,7 @@ header {
 }
 
 .popular_accommodation_image {
-    border-radius: 10px 0 0 10px;
+    border-radius: 25px 0 0 25px;
     height: 200px;
     width: 200px;
     object-fit: cover;
@@ -345,7 +345,46 @@ header {
 
 /* ------- City's activities ------ */
 #city_activities {
-    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 35px;
+
+}
+
+.city_activities_card {
+    background-color: var(--white);
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.05);
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+}
+
+.city_activities_image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+}
+
+.city_activities_card_title {
+    margin-left: 15px;
+}
+
+.long_format_card .city_activities_img_container {
+    height: 600px;
+    width: 400px;
+}
+
+.medium_format_card .city_activities_img_container {
+    height: 300px;
+    width: 400px;
+}
+
+.small_format_card .city_activities_img_container {
+    height: 200px;
+    width: 400px;
 }
 
 /*Tablets [768px -> 992px]*/
