@@ -5,7 +5,7 @@
 body {
     background-color: var(--gris);
     font-family: 'Raleway', sans-serif;
-    margin: 0% 5%;
+    margin: 0;
     height: 100vh; 
 }
 
@@ -62,6 +62,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 7.5%;
+    margin: 0 5%;
 }
 
 #site_logo {
@@ -105,6 +106,10 @@ header {
 }
 
 /* --------------- Search form section --------------- */
+#search_form_container {
+    margin: 0 5%;
+}
+
 #search_form_container h1 {
     margin-bottom: 7.5px;
 }
@@ -171,6 +176,7 @@ header {
     display: flex;
     width: 100%;
     align-items: center;
+    margin: 0 5%;
     margin-top: 20px;
     flex-wrap: wrap;
 }
@@ -221,6 +227,7 @@ header {
 
 #accommodations_number_message{
     display: flex;
+    margin: 0 5%;
 }
 
 #accommodations_number_message div {
@@ -238,6 +245,7 @@ header {
 /* --------------- Main tag --------------- */
 #accommodations {
     display: flex;
+    margin: 0 5%;
 }
 
 /* ------- City's accommodations ------- */
@@ -348,7 +356,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 35px;
+    margin: 35px 5% 35px 5%;
 
 }
 
@@ -385,6 +393,32 @@ header {
 .small_format_card .city_activities_img_container {
     height: 200px;
     width: 400px;
+}
+
+/* --------------- Footer --------------- */
+
+footer {
+    background-color: var(--gris-darker);
+    display: flex;
+    padding: 35px;
+}
+
+footer ul {
+    margin-right: 300px;
+    list-style: none;
+}
+
+.footer_section_title {
+    font-size: large;
+    font-weight: bold;
+}
+
+.footer_link {
+    margin-top: 15px;
+}
+
+.footer_link a:hover {
+    color: var(--blue);
 }
 
 /*Tablets [768px -> 992px]*/
