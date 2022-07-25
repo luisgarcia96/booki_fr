@@ -34,6 +34,11 @@ i {
     font-size: large;
 }
 
+.fa-star {
+    font-size: medium;
+    color: var(--blue);
+}
+
 /* --------------- Header tag and it's children tags --------------- */
 header {
     display: flex;
@@ -214,8 +219,67 @@ header {
 
 
 /* --------------- Main tag --------------- */
+#accommodations {
+    display: flex;
+}
 
+/* ------- City's accommodations ------- */
+#city_accommodations {
+    background-color:
+     var(--gris-darker);
+    padding: 25px;
+    width: 70%;
+    border-radius: 10px;
+    margin-right: 25px;
+}
 
+/* ------- Popular Accommodations ------ */
+
+#popular_accommodations {
+    background-color: var(--gris-darker);
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section_title {
+    width: 100%;
+}
+
+.popular_accommodations_card {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.popular_accommodation_image {
+    border-radius: 10px 0 0 10px;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
+.card_info {
+    padding: 0px 25px;
+    flex-grow: 1;
+}
+
+.card_title {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card_description {
+    margin-top: 0;
+}
+
+/* ------- City's activities ------ */
+#city_activities {
+    background-color: aqua;
+}
 
 /*Tablets [768px -> 992px]*/
 @media only screen and (max-width: 992px){
@@ -224,6 +288,11 @@ header {
 
 /*Smartphones [325px -> 768px]*/
 @media only screen and (max-width: 767px){
+
+    body {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
     /* ---------------@Smartphones / Header tag and it's children tags --------------- */
 
@@ -268,6 +337,11 @@ header {
 
     /* --------------- @Smartphones / Search form section --------------- */
 
+    #search_form_container {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
     #search_form {
         display: flex;
         width: 100%;
@@ -295,8 +369,50 @@ header {
     }
 
     /* --------------- @Smartphones / Filters's section --------------- */
+    
+    #filters_container {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
     #filters_container h2 {
         display: inline-block;
         width: 100%;
     }
+
+    #accommodations_number_message {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    /* --------------- @Smartphones - Main tag --------------- */
+    #accommodations {
+        flex-direction: column;
+    }
+
+    /* ------- @Smartphones - City's accommodations ------- */
+    #city_accommodations {
+        order: +1;
+        width: 100%;
+        border-radius: 0;
+        background-color: var(--white);
+    }
+
+    /* ------------- @Smartphones / Popular accommodations ------------- */
+    #popular_accommodations {
+        width: 100vw;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    
+    .popular_accommodations_card {
+        width: 95%;
+        padding: 5px;
+    }
+    
+    .popular_accommodation_image {
+        width: 30%;
+        height: 125px;
+    }
+    
 }
