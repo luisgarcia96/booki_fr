@@ -652,6 +652,11 @@ footer ul {
 
     .city_accommodations_card {
         width: 100%;
+        height: 220px;
+    }
+
+    .city_accommodations_card img {
+        height: 130px;
     }
 
     /* ------------- @Smartphones / Popular accommodations ------------- */
@@ -674,9 +679,29 @@ footer ul {
 
     /* ------- @Smartphones / City's activities ------ */
     #city_activities {
-        width: 100%;
         margin: 0;
         padding: 0 10px 0 10px;
+    }
+
+    .city_activities_column {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .city_activities_card {
+        margin-bottom: 40px;
+    }
+
+    .long_format_card .city_activities_img_container {
+        height: 150px;
+    }
+    
+    .medium_format_card .city_activities_img_container {
+        height: 150px;
+    }
+    
+    .small_format_card .city_activities_img_container {
+        height: 150px;
     }
  
     /* --------------- @Smartphones / Footer --------------- */
