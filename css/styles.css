@@ -443,9 +443,14 @@ footer ul {
 
 /*Small PC Screens [993px -> 1366px]*/
 @media only screen and (max-width: 1366px){ 
+
+    /* --------------- @Small PC Screens - City accommodations --------------- */
     .city_accommodations_card {
         width: 270px;
     }
+
+
+    /* --------------- @Small PC Screens - City activities --------------- */
 
     .long_format_card .city_activities_img_container {
         height: 500px;
@@ -567,10 +572,6 @@ footer ul {
         font-weight: bold;
     }
 }
-
-
-
-
 
 /*Smartphones [325px -> 768px]*/
 @media only screen and (max-width: 767px){
