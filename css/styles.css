@@ -8,10 +8,6 @@ body {
     overflow-x: hidden;
 }
 
-.page_content {
-    padding: 0 4%;
-}
-
 h1 {
     font-size: 100%;
     font-weight: 800;
@@ -80,6 +76,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 75px;
+    padding: 0 4%;
 }
 
 #site_logo {
@@ -127,6 +124,7 @@ header {
 /* --------------- Search form section --------------- */
 #search_form_container {
     margin-top: 25px;
+    padding: 0 4%;
 }
 
 #search_form_container h1 {
@@ -197,6 +195,7 @@ header {
     align-items: center;
     margin-top: 20px;
     flex-wrap: wrap;
+    padding: 0 4%;
 }
 
 #filters_container a {
@@ -247,6 +246,7 @@ header {
     display: flex;
     margin-top: 20px;
     font-size: 80%;
+    padding: 0 4%;
 }
 
 #accommodations_number_message div {
@@ -262,6 +262,10 @@ header {
 
 
 /* --------------- Main tag --------------- */
+
+main {
+    padding: 0 4%;
+}
 
 #accommodations {
     display: flex;
@@ -479,52 +483,65 @@ footer ul {
 
 /*Tablets [768px -> 992px]*/
 @media only screen and (max-width: 991px){
-    body {
-        width: 100%;
-        margin: 0;
-    }
-
-    main {
-        margin-right: 7.5%;
-    }
 
     /* --------------- @Tablets - Main tag --------------- */
+
+    main {
+        padding: 0
+    }
+
     #accommodations {
         flex-direction: column;
         width: 100%;
-        margin: 0;
     }
 
     /* ------- @Tablets - City's accommodations ------- */
     #city_accommodations {
         order: +1;
         width: 100%;
+        padding: 5% 4%;
         border-radius: 0;
         background-color: var(--white);
+        justify-content: flex-start;
     }
 
     .city_accommodations_card {
-        width: 100%;
+        width: 27.5%;
     }
-    
-    .city_accommodation_image {
-        height: 300px;
+
+    .city_accommodations_card a .image_container {
+        height: 10vh;
     }
 
     /* ------- @Tablets / Popular Accommodations ------ */
 
     #popular_accommodations {
-        width: 100%;
+        width: 95%;
         border-radius: 0;
     }
 
+    .popular_accommodations_card {
+        margin-bottom: 35px;
+        padding: 1%;
+    }
+
+    .popular_accommodations_card a {
+        height: 25vw;
+        width: 50%;
+    }
+
+    .popular_accommodations_card .card_info {
+        margin-left: 35px;
+        width: 50%;
+        height: 8vw;
+    }
     /* ------- @Tablets / City's activities ------ */
     #city_activities {
-        width: 100%;
+        padding: 0 4%;
     }
 
     .city_activities_column {
-        width: 50%;
+        width: 47.5%;
         margin-bottom: 35px;
     }
 
@@ -533,49 +550,21 @@ footer ul {
     }
 
     .city_activities_card {
-        width: 95%;
+        width: 100%;
         margin-right: 5px;
     }
 
-    .city_activities_img_container {
-        width: 100%;
-    }
-
     .long_format_card .city_activities_img_container {
-        width: 100%;
-    }
-    
-    .medium_format_card .city_activities_img_container {
-        width: 100%;
-    }
-    
-    .small_format_card .city_activities_img_container {
-        width: 100%;
-    }
-
-    .city_activities_image {
-        width: 100%;
+       height: 35vh; 
     }
     
     /* --------------- @Tablets - Footer --------------- */
-    
+
     footer {
-       flex-direction: column; 
-       text-align: center;
-       padding: 0;
-       width: 100%;
+        width: 100%;
+        padding: 2% 4%;
     }
     
-    footer ul {
-        margin-right: 0;
-        margin-left: 0;
-        padding: 0;
-    }
-    
-    .footer_section_title {
-        font-size: large;
-        font-weight: bold;
-    }
 }
 
 /*Smartphones [325px -> 768px]*/
