@@ -457,7 +457,6 @@ footer {
     flex-direction: row;
     padding: 4vh 4%;
     margin-top: 50px;
-    width: 100%;
     
 }
 
@@ -497,8 +496,9 @@ footer ul {
 
     /* ------- @Tablets - City's accommodations ------- */
     #city_accommodations {
-        order: +1;
         width: 100%;
+        margin-right: 0;
+        order: +1;
         padding: 5% 4%;
         border-radius: 0;
         background-color: var(--white);
@@ -561,7 +561,6 @@ footer ul {
     /* --------------- @Tablets - Footer --------------- */
 
     footer {
-        width: 100%;
         padding: 2% 4%;
     }
     
