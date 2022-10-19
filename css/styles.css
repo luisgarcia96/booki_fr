@@ -580,19 +580,22 @@ footer ul {
         display: flex;
         height: auto;
         width: 100%;
+        padding: 0;
         justify-content: center;
         text-align: center;
         flex-wrap: wrap;
-        margin: 10px 0 10px 0;
+        margin: 5% 0 10% 0;
     }
 
 
     #site_logo{
         width: 100%;
+        margin-bottom: 5%;
     }
 
     #site_logo img {
         max-height: 50px;
+        max-width: 100px;
         position: relative;
         left: 20px;
     }
@@ -608,6 +611,7 @@ footer ul {
     }
 
     .header_nav_link {
+        font-size: medium;
         width: 50%;
         border-top: none;
         padding-bottom: 10px;
@@ -625,17 +629,36 @@ footer ul {
     /* --------------- @Smartphones / Search form section --------------- */
 
     #search_form_container {
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-top: 0;
+        padding: 0 5%;
+        font-size: larger;
+    }
+
+    #search_form_container h1 {
+        font-size: 1.35rem;
+        margin-bottom: 15px;
+    }
+
+    #search_form_container p { 
+        margin-bottom: 10%;
     }
 
     #search_form {
-        display: flex;
+        height: 50px;
         width: 100%;
+        font-size: larger;
+        background-color: var(--white);
+        border-color: var(--gris);
+        border-radius: 15px;
     }
 
     #search_form input {
         flex-grow: 1;
+        border-color: var(--gris);
+    }
+
+    #search_form #map_icon {
+        border-radius: 15px 0px 0px 15px;
     }
 
     #search_form button {
@@ -644,7 +667,8 @@ footer ul {
         align-items: center;
         width: 50px;
         padding: 0 15px;
-        border-radius: 10px;
+        border-radius: 15px;
+        back
     }
 
     #search_form button .btn_icon {
@@ -658,23 +682,38 @@ footer ul {
     /* --------------- @Smartphones / Filters's section --------------- */
     
     #filters_container {
-        margin-left: 15px;
-        margin-right: 15px;
+        padding: 0 5%;
     }
     
     #filters_container h2 {
         display: inline-block;
         width: 100%;
+        font-size: 125%;
+    }
+
+    #filters_container a {
+        margin: 10px 13px 10px 0px;
+    }
+
+    #filters_container .filter {
+        font-size: 125%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin: 0;
+    }
+
+    #filters_container .filter .filter_icon{
+        font-size: 125%;
+        height: 50px;
+        width: 50px;
     }
 
     #accommodations_number_message {
-        margin-left: 15px;
-        margin-right: 15px;
+        font-size: 100%;
+        padding: 0 5%;
     }
     /* --------------- @Smartphones - Main tag --------------- */
-    main {
-        margin-right: 0;
-    }
+
 
     #accommodations {
         flex-direction: column;
@@ -683,55 +722,90 @@ footer ul {
     /* ------- @Smartphones - City's accommodations ------- */
     #city_accommodations {
         order: +1;
-        width: 100%;
         border-radius: 0;
         background-color: var(--white);
-        padding: 0 15px 50px 15px;
+        padding: 10% 0 10% 0;
+    }
+
+    #city_accommodations .section_title{
+        width: auto;
+        font-size: 150%;
+        margin-bottom: 25px;
+        margin-left: 5%;
     }
 
     .city_accommodations_card {
         width: 100%;
-        height: 220px;
+        height: 175px;
+        margin-right: 5%;
+        margin-left: 5%;
+        
+    }
+
+    .city_accommodations_card a .image_container{
+        height: auto;
     }
 
     .city_accommodations_card img {
-        height: 130px;
+        height: 100%;
+    }
+
+    .city_accommodations_card .card_info {
+        font-size: larger;
     }
 
     /* ------------- @Smartphones / Popular accommodations ------------- */
     #popular_accommodations {
         width: 100%;
-        padding: 0 15px 0 15px;
+        padding: 10% 0 5% 0;
         border-radius: 0;
     }
 
+    #popular_accommodations .section_title{
+        width: auto;
+        font-size: 150%;
+        margin-bottom: 25px;
+        margin-left: 5%;
+    }
     
     .popular_accommodations_card {
-        margin-top: 0;
-        width: 95%;
+        margin: 0 5% 5% 5%;
         padding: 6px 5px 2px 5px;
+        font-size: larger;
+        height: 150px;
+        max-height: 150px;
+    }
+
+    .popular_accommodations_card .popular_accommodation_image {
+        width: 100%;
+        height: 100%;
     }
 
     .popular_accommodations_card .card_info {
-        flex-grow: 0;
         width: 50%;
+        margin-left: 20px;
+    }
+
+    .popular_accommodations_card .card_info .reviews_container {
+        padding-top: 50px;
     }
     
     .popular_accommodations_card a {
+        height: 100%;
+        max-height: 146px;
         width: 50%;
-    }
-
-    .popular_accommodation_image {
-        width: 100%;
-        height: 150px;
     }
 
     /* ------- @Smartphones / City's activities ------ */
     #city_activities {
         margin: 0;
-        padding: 0 20px 0 20px;
+        padding: 10% 5% 0 5%;background-color: var(--white);
     }
 
+    #city_activities .section_title{
+        font-size: 150%;
+        margin-bottom: 25px;
+    }
     .city_activities_column {
         width: 100%;
         margin-bottom: 0;
@@ -739,6 +813,10 @@ footer ul {
 
     .city_activities_card {
         margin-bottom: 40px;
+    }
+
+    .city_activities_card_title {
+        font-size: 100%;
     }
 
     .long_format_card .city_activities_img_container {
@@ -756,9 +834,15 @@ footer ul {
     /* --------------- @Smartphones / Footer --------------- */
 
     footer {
+        flex-direction: column;
         margin-top: 0;
         width: 100%;
         text-align: start;
-        padding: 20px;
+        padding: 20px 0;
         }
+
+    footer ul {
+        padding-left: 5%;
+        font-size: 125%;
+    }
 }
