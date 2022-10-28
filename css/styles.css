@@ -491,7 +491,7 @@ footer ul {
 }
 
 /*Tablets [768px -> 992px]*/
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 993px){
 
     body {
         margin-left: 0;
@@ -554,11 +554,11 @@ footer ul {
     .popular_accommodations_card {
         margin-bottom: 35px;
         padding: 1%;
+        height: 175px;
     }
 
 
     .popular_accommodations_card a {
-        height: 25vw;
         width: 50%;
     }
 
@@ -587,7 +587,7 @@ footer ul {
     }
 
     .long_format_card .city_activities_img_container {
-       height: 35vh; 
+       height: 280px; 
     }
     
     /* --------------- @Tablets - Footer --------------- */
@@ -599,7 +599,7 @@ footer ul {
 }
 
 /*Smartphones [325px -> 768px]*/
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
 
     body {
         margin-left: 0;
