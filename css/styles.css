@@ -6,7 +6,7 @@ body {
     background-color: var(--gris);
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
-    width: 992px;
+    max-width: 992px;
     margin: auto;
 }
 
@@ -493,10 +493,8 @@ footer ul {
 /*Tablets [768px -> 992px]*/
 @media only screen and (max-width: 993px){
 
-    body {
-        margin-left: 0;
-        margin-right: 0;
-    }
+
+
 
     /* --------------- @Tablets - Main tag --------------- */
 
@@ -595,6 +593,10 @@ footer ul {
     footer {
         padding: 2% 4%;
     }
+
+    footer ul {
+        margin-right: 80px;
+    }
     
 }
 
@@ -602,8 +604,7 @@ footer ul {
 @media only screen and (max-width: 767px){
 
     body {
-        margin-left: 0;
-        margin-right: 0;
+        width: auto;
     }
 
     /* ---------------@Smartphones / Header tag and it's children tags --------------- */
@@ -758,10 +759,8 @@ footer ul {
     }
 
     #city_accommodations .section_title{
-        width: auto;
         font-size: 150%;
         margin-bottom: 25px;
-        margin-left: 5%;
     }
 
     .city_accommodations_card {
@@ -796,6 +795,7 @@ footer ul {
         font-size: 150%;
         margin-bottom: 25px;
         margin-left: 5%;
+        margin-right: 5%;
     }
     
     .popular_accommodations_card {
@@ -829,7 +829,7 @@ footer ul {
     /* ------- @Smartphones / City's activities ------ */
     #city_activities {
         margin: 0;
-        padding: 10% 5% 0 5%;background-color: var(--white);
+        padding: 5% 5% 7.5% 5%;background-color: var(--white);
     }
 
     #city_activities .section_title{
@@ -842,7 +842,7 @@ footer ul {
     }
 
     .city_activities_card {
-        margin-bottom: 40px;
+        margin-bottom: 25px;
     }
 
     .city_activities_card_title {
